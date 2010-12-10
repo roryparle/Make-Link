@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Make Link Help - Defining Link Types</title>
+    <link rel="stylesheet" href="chrome://makelink/content/help/help.css"/>
+</head>
+
+<body id="makelink-help">
+    <h1>Make Link Help - Defining Link Types</h1>
+    <p>Make Link comes with three useful default link types to demonstrate a little of what it can do. These basic link types might be enough for you. However if you need more control over what types of links you generate, you can customise the set of link types offered to you. This document is a short description of what you need to know to create your own link types for Make Link.</p>
+    <h2>Contexts</h2>
+        <p>Make Link creates links differently depending on the <dfn>context</dfn> in which it is invoked, i.e., depending on what you right-click on to get the Make Link menu. The three contexts are <dfn>link</dfn>, <dfn>selection</dfn>, and <dfn>page</dfn>.</p>
+        <dl>
+        <dt>Link</dt>
+            <dd>When you select a Make Link option after right-clicking on a link it will be invoked in <dfn>link</dfn> mode.</dd>
+        <dt>Selection</dt>
+            <dd>When you select a Make Link option after right-clicking on some selected (highlighted) text it will be invoked in <dfn>selection</dfn> mode.</dd>
+        <dt>Page</dt>
+            <dd>When you select a Make Link option by any other method it will be invoked in <dfn>page</dfn> mode.</dd>
+        </dl>
+
+    <h2>Variables</h2>
+        <p>Make Link recognises a set of <dfn>variables</dfn> which represent the various data related to links. For example the variable <code class="ml">%url%</code> represents the <abbr title="uniform resource locator">URL</abbr> (web address) of a link. When you define the format for a link type in Make Link you do so by combining normal text with these variables. For example the <strong>Plain Text</strong> link type (one of Make Link's defaults) has the format &#8220;<code><var class="ml">%text%</var>&nbsp;(<var class="ml">%url%</var>)</code>&#8221;. Make Link interprets this format by replacing <code><var class="ml">%text%</var></code> with the actual text of the link and <code><var class="ml">%url%</var></code> with the <abbr title="Uniform Resource Locator">URL</abbr> of the link.</p>
+        <p>The contents of some variables depend on the context in which it was invoked. The variables are as follows:</p>
+        <dl>
+        <dt><var class="ml">%text%</var></dt>
+            <dd>The text of the link.</dd>
+            <dd>In link context: the text of the original link.</dd>
+            <dd>In selection context: the selected text.</dd>
+            <dd>In page context: the page <code class="element">title</code> element (the text that appears in the title-bar).</dd>
+        <dt><var class="ml">%text_n%,%text_br%</var></dt>
+            <dd>The text of the link.</dd>
+            <dd>In selection context: the selected text, in which "\n" is copied as it is(<var class="ml">%text_n%</var>) or is replaced by "&lt;br /&gt;\n" (<var class="ml">%text_br%</var>).</dd>
+            <dd>In other contexts: same value as <var class="ml">%text%</var>.</dd>
+        <dt><var class="ml">%url%</var></dt>
+            <dd>The <abbr title="Uniform Resource Locator">URL</abbr> of the link.</dd>
+            <dd>In link context: the <code class="attribute">href</code> attribute of the original link (the <abbr title="Uniform Resource Locator">URL</abbr> of the target page).</dd>
+            <dd>In page or selection context: the <abbr title="Uniform Resource Locator">URL</abbr> of the current page.</dd>
+        <dt><var class="ml">%title%</var></dt>
+            <dd>The link title.</dd>
+            <dd>In link context: the <code class="attribute">title</code> attribute of the original link (the tool-tip text).</dd>
+            <dd>In selection context: the page <code class="element">title</code> element (the text that appears in the title-bar).</dd>
+            <dd>In page context: the <code class="attribute">content</code> attribute of any <code class="element">meta</code> element with a <code class="attribute">name</code> of &#8220;description&#8221;.</dd>
+        <dt><var class="ml">%input%</var></dt>
+            <dd>You will be prompted to provide the text to replace this variable each time you choose a link type with this variable in it.</dd>
+        <dt><var class="ml">%imgurl%</var></dt>
+            <dd>If you right-click on an image, this variable will contain the URL of that image. Otherwise it will be blank.</dd>
+        <dt><var class="ml">%tinyurl%</var> (<strong>experimental</strong>)</dt>
+            <dd>Uses the <a href="http://durl.us/">durl.us</a> or <a href="http://tinyurl.com/">TinyURL</a> services to generate a shortened alias for the URL represented by <var class="ml">%url%</var>. This is an experimental feature which may display bugs, including momentary interface hangs and silent failure (i.e., it may fail to copy anything to the clipboard and fail to notify you). You can verify that it has worked either by checking the contents of the clipboard before invoking Make Link (therefore letting you know if the new contents are different) or by verifying the short URL after it is generated by visiting it. This feature will often work on a second attempt if it has failed initially.</dd>
+        </dl>
+</body>
+
+</html>

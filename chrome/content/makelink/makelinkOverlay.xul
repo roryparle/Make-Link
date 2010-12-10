@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://makelink/locale/makelink.dtd">
+<overlay id="MakeLinkOverlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/utils.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/logger.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/page_info.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/link_type_source.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/url_shortener.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/link_maker.js"/>
+
+  <stringbundle
+      id="ml-strings"
+      src="chrome://makelink/locale/makelink/makelink.properties"/>
+
+  <popup id="contentAreaContextMenu">
+    <menu id="makelink-menu"
+        label="&makelink-extname;"
+        insertbefore="frame-sep"
+        accesskey="&makelink-accesskey;">
+      <menupopup id="makelink-submenu">
+        <menuitem disabled="true" label="&popup-makelink-default;"/>
+        <menuitem id="makelink-configure" label="&popup-makelink-configure;"/>
+      </menupopup>
+    </menu>
+  </popup>
+</overlay>
+

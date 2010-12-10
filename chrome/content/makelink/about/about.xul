@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://makelink/locale/makelink.dtd">
+<dialog
+    buttons="accept"
+    id="makelink-about-dialog"
+    title="About Make Link"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+  <vbox>
+    <html:iframe
+        src="chrome://makelink/content/about/about.html"
+        style="width: 300px;"/>
+  </vbox>
+</dialog>

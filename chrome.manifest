@@ -1,0 +1,6 @@
+content makelink jar:chrome/makelink.jar!/content/makelink/
+locale makelink en-US jar:chrome/makelink.jar!/locale/en-US/makelink/
+locale makelink zh-TW jar:chrome/makelink.jar!/locale/zh-TW/makelink/
+locale makelink ja-JP jar:chrome/makelink.jar!/locale/ja-JP/makelink/
+locale makelink fr-FR jar:chrome/makelink.jar!/locale/fr-FR/makelink/
+overlay chrome://browser/content/browser.xul chrome://makelink/content/makelinkOverlay.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384}

@@ -1,0 +1,14 @@
+pref("net.soylentred.makelink.types.0.title", "Plain Text");
+pref("net.soylentred.makelink.types.0.format", "%text% <%url%>");
+pref("net.soylentred.makelink.types.0.useentities", false);
+pref("net.soylentred.makelink.types.1.title", "Forum Code");
+pref("net.soylentred.makelink.types.1.format", "[url=%url%]%text%[/url]");
+pref("net.soylentred.makelink.types.1.useentities", false);
+pref("net.soylentred.makelink.types.2.title", "HTML");
+pref("net.soylentred.makelink.types.2.format", "<a href=\"%url%\">%text%</a>");
+pref("net.soylentred.makelink.types.2.useentities", true);
+pref("net.soylentred.makelink.types.3.title", "Markdown");
+pref("net.soylentred.makelink.types.3.format", "[%text%](%url% \"%text%\")");
+pref("net.soylentred.makelink.types.3.useentities", true);
+pref("net.soylentred.makelink.order", "0,1,2,3");
+pref("extensions.{0B6B0D55-DFAC-4006-AEE6-25667F55A2A8}.description", "chrome://makelink/locale/makelink/makelink.properties") ;

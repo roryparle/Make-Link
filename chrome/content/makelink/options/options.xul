@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://makelink/locale/makelink.dtd">
+<dialog buttons="accept"
+    id="makelink-preferences-dialog"
+    title="&makelink-options-title;"
+    width="600"
+    height="400"
+    style="padding: 0 !important;"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/utils.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/logger.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/link_type_source.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/options/options.js"/>
+  <popup id="link-types-context">
+    <menuitem label="&makelink-options-delete;"
+        id="link-types-delete-selected"
+        accesskey="&makelink-options-delete-accesskey;"/>
+    <menuitem label="&makelink-options-modify;" 
+        id="link-types-modify-selected"
+        accesskey="&makelink-options-modify-accesskey;"/>
+  </popup>
+  <hbox
+      style="background: white; padding: 5px; margin: 0; font-size: 1.2em;">
+    <description value="&makelink-options-definedtitle;"/>
+  </hbox>
+  <html:hr />
+  <hbox flex="1">
+    <tree id="makelink-link-types" flex="1">
+      <treecols>
+        <treecol id="title" label="&makelink-title;" primary="true" flex="1"/>
+        <splitter/>
+        <treecol id="format" label="&makelink-format;" flex="2"/>
+      </treecols>
+      <treechildren flex="1" id="types" context="link-types-context"/>
+    </tree>
+    <vbox>
+      <button label="&makelink-options-up;"
+          id="button-up"
+          disabled="true"/>
+      <button label="&makelink-options-down;" 
+          id="button-down"
+          disabled="true"/>
+    </vbox>
+  </hbox>
+  <hbox>
+    <spacer flex="1"/>
+    <button label="&makelink-options-delete;"
+        accesskey="&makelink-options-delete-accesskey;"
+        id="button-delete"/>
+    <button label="&makelink-options-modify;"
+        accesskey="&makelink-options-modify-accesskey;"
+        id="button-modify"/>
+    <button label="&makelink-options-new;"
+        accesskey="&makelink-options-new-accesskey;"
+        id="button-new"/>
+  </hbox>
+</dialog>

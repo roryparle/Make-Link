@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://makelink/locale/makelink.dtd">
+<dialog
+    buttons="accept, cancel"
+    id="makelink-edit-dialog"
+    title="&makelink-extname; :: &makelink-editlink-new-title;"
+    width="400"
+    height="300"
+    style="padding: 0;"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/utils.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/logger.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/link_type_source.js"/>
+  <script type="application/x-javascript"
+      src="chrome://makelink/content/options/link_type_editor.js"/>
+  <hbox style="background: #fff; padding: 5px; margin: 0; font-size: 1.2em;">
+    <description
+        value="&makelink-extname; :: &makelink-editlink-new-title;"
+        id="makelink-newlinktype-contexthelp-new"/>
+    <description
+        value="&makelink-extname; :: &makelink-editlink-edit-title;"
+        id="makelink-newlinktype-contexthelp-edit"/>
+  </hbox>
+  <html:hr />
+  <grid flex="1">
+    <columns>
+      <column flex="1"/>
+      <column flex="4"/>
+      <column flex="1"/>
+    </columns>
+    <rows>
+      <row>
+        <label control="editlinktype-title" value="&makelink-title;"/>
+        <textbox id="editlinktype-title" flex="1"/>
+      </row>
+      <row>
+        <label control="editlinktype-format" value="&makelink-format;"/>
+        <textbox id="editlinktype-format" flex="1" multiline="true" rows="3"/>
+      </row>
+      <row>
+        <label control="editlinktype-entities" value="&makelink-entities;"/>
+        <checkbox id="editlinktype-entities"/>
+      </row>
+    </rows>
+  </grid>
+  <hbox>
+    <spacer flex="1"/>
+    <button
+        label="&makelink-editlink-help;"
+        id="edit-help"
+        accesskey="&makelink-editlink-help-accesskey;"/>
+  </hbox>
+</dialog>

@@ -1,0 +1,27 @@
+<!ENTITY makelink-extname "Make Link">
+
+<!ENTITY popup-makelink-configure "Configure…">
+<!ENTITY popup-makelink-default "(error)">
+
+<!ENTITY makelink-options-title "Make Link Options">
+<!ENTITY makelink-options-up "Move Up">
+<!ENTITY makelink-options-down "Move Down">
+<!ENTITY makelink-options-delete "Delete">
+<!ENTITY makelink-options-delete-accesskey "D">
+<!ENTITY makelink-options-modify "Modify…">
+<!ENTITY makelink-options-modify-accesskey "M">
+<!ENTITY makelink-options-new "New…">
+<!ENTITY makelink-options-new-accesskey "N">
+<!ENTITY makelink-options-definedtitle "Make Link :: Defined Link Types">
+
+<!ENTITY makelink-title "Name:">
+<!ENTITY makelink-format "Format:">
+<!ENTITY makelink-entities "Use HTML Entities:">
+
+<!ENTITY makelink-editlink-new-title "New Link Type">
+<!ENTITY makelink-editlink-edit-title "Edit Link Type">
+<!ENTITY makelink-editlink-help "Help">
+<!ENTITY makelink-editlink-help-accesskey "H">
+
+<!ENTITY makelink-accesskey "L">
+

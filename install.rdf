@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{0B6B0D55-DFAC-4006-AEE6-25667F55A2A8}</em:id>
+    <em:name>Make Link</em:name>
+    <em:version>10.12</em:version>
+    <em:description>Make HTML, ForumCode, or other links from the context menu</em:description>
+    <em:creator>Rory Parle &lt;rory@soylentred.net&gt;</em:creator>
+    <em:contributor>Ben Basson (initial code contribution)</em:contributor>
+    <em:contributor>Nelson &lt;nelson@csie.us&gt; (Traditional Chinese translator, also contribute a patch.)</em:contributor>
+    <em:homepageURL>http://www.soylentred.net/projects/make-link</em:homepageURL>
+    <em:optionsURL>chrome://makelink/content/options/options.xul</em:optionsURL>
+    <em:aboutURL>chrome://makelink/content/about/about.xul</em:aboutURL>
+    <em:type>2</em:type>
+    <em:file>
+      <Description about="urn:mozilla:extension:file:makelink.jar">
+        <em:package>content/makelink/</em:package>
+        <em:locale>locale/en-US/makelink/</em:locale>
+        <em:locale>locale/zh-TW/makelink/</em:locale>
+        <em:locale>locale/ja-JP/makelink/</em:locale>
+        <em:locale>locale/fr-FR/makelink/</em:locale>
+      </Description>
+    </em:file>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>4.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

@@ -1,0 +1,27 @@
+<!ENTITY makelink-extname "Make Link">
+
+<!ENTITY popup-makelink-configure "設定">
+<!ENTITY popup-makelink-default "(錯誤)">
+
+<!ENTITY makelink-options-title "Make Link 設定">
+<!ENTITY makelink-options-up "往上移">
+<!ENTITY makelink-options-down "往下移">
+<!ENTITY makelink-options-delete "刪除">
+<!ENTITY makelink-options-delete-accesskey "D">
+<!ENTITY makelink-options-modify "修改">
+<!ENTITY makelink-options-modify-accesskey "M">
+<!ENTITY makelink-options-new "新增">
+<!ENTITY makelink-options-new-accesskey "N">
+<!ENTITY makelink-options-definedtitle "Make Link :: 已定義的連結">
+
+<!ENTITY makelink-title "名稱:">
+<!ENTITY makelink-format "格式:">
+<!ENTITY makelink-entities "視為 HTML 元素:">
+
+<!ENTITY makelink-editlink-new-title "新增連結">
+<!ENTITY makelink-editlink-edit-title "編輯連結">
+<!ENTITY makelink-editlink-help "幫助">
+<!ENTITY makelink-editlink-help-accesskey "H">
+
+<!ENTITY makelink-accesskey "L">
+

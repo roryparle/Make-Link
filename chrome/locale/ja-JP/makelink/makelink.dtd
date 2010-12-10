@@ -1,0 +1,27 @@
+<!ENTITY makelink-extname "Make Link">
+
+<!ENTITY popup-makelink-configure "設定">
+<!ENTITY popup-makelink-default "(エラー)">
+
+<!ENTITY makelink-options-title "Make Link オプション">
+<!ENTITY makelink-options-up "一つ上へ">
+<!ENTITY makelink-options-down "一つ下へ">
+<!ENTITY makelink-options-delete "削除">
+<!ENTITY makelink-options-delete-accesskey "D">
+<!ENTITY makelink-options-modify "変更...">
+<!ENTITY makelink-options-modify-accesskey "M">
+<!ENTITY makelink-options-new "新規...">
+<!ENTITY makelink-options-new-accesskey "N">
+<!ENTITY makelink-options-definedtitle "Make Link :: 規定のリンク形式">
+
+<!ENTITY makelink-title "名前:">
+<!ENTITY makelink-format "フォーマット:">
+<!ENTITY makelink-entities "HTMLエンティティを使用する:">
+
+<!ENTITY makelink-editlink-new-title "新しいリンク形式">
+<!ENTITY makelink-editlink-edit-title "リンク形式の編集">
+<!ENTITY makelink-editlink-help "ヘルプ">
+<!ENTITY makelink-editlink-help-accesskey "H">
+
+<!ENTITY makelink-accesskey "L">
+
