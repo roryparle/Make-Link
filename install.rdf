@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>{0B6B0D55-DFAC-4006-AEE6-25667F55A2A8}</em:id>
     <em:name>Make Link</em:name>
-    <em:version>10.12</em:version>
+    <em:version>11.03</em:version>
     <em:description>Make HTML, ForumCode, or other links from the context menu</em:description>
     <em:creator>Rory Parle &lt;rory@soylentred.net&gt;</em:creator>
     <em:contributor>Ben Basson (initial code contribution)</em:contributor>
@@ -20,6 +20,7 @@
         <em:locale>locale/zh-TW/makelink/</em:locale>
         <em:locale>locale/ja-JP/makelink/</em:locale>
         <em:locale>locale/fr-FR/makelink/</em:locale>
+        <em:locale>locale/sv-SE/makelink/</em:locale>
       </Description>
     </em:file>
     <em:targetApplication>

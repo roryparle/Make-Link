@@ -1,0 +1,27 @@
+<!ENTITY makelink-extname "Make Link">
+
+<!ENTITY popup-makelink-configure "Konfigurera…">
+<!ENTITY popup-makelink-default "(fel)">
+
+<!ENTITY makelink-options-title "Inställningar för Make Link">
+<!ENTITY makelink-options-up "Flytta uppåt">
+<!ENTITY makelink-options-down "Flytta nedåt">
+<!ENTITY makelink-options-delete "Ta bort">
+<!ENTITY makelink-options-delete-accesskey "b">
+<!ENTITY makelink-options-modify "Ändra…">
+<!ENTITY makelink-options-modify-accesskey "Ä">
+<!ENTITY makelink-options-new "Nytt…">
+<!ENTITY makelink-options-new-accesskey "N">
+<!ENTITY makelink-options-definedtitle "Make Link :: Definierade länktyper">
+
+<!ENTITY makelink-title "Namn:">
+<!ENTITY makelink-format "Format:">
+<!ENTITY makelink-entities "Använd HTML-entiteter:">
+
+<!ENTITY makelink-editlink-new-title "Ny länktyp">
+<!ENTITY makelink-editlink-edit-title "Redigera länktyp">
+<!ENTITY makelink-editlink-help "Hjälp">
+<!ENTITY makelink-editlink-help-accesskey "H">
+
+<!ENTITY makelink-accesskey "L">
+
